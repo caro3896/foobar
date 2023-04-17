@@ -21,7 +21,7 @@ function start() {
 }
 
 async function loadJSON() {
-  await Promise.all([fetch("https://the-three-must-get-beers.herokuapp.com/").then((res) => res.json()), fetch("https://the-three-must-get-beers.herokuapp.com/beertypes").then((res) => res.json())]).then((foobarData) => {
+  await Promise.all([fetch("https://ethereal-green-hyacinth.glitch.me").then((res) => res.json()), fetch("https://ethereal-green-hyacinth.glitch.me/beertypes").then((res) => res.json())]).then((foobarData) => {
     // When loaded, prepare data objects
     showOrders(foobarData[0].queue);
     showFav(foobarData[0].serving);
