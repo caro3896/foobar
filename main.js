@@ -21,7 +21,7 @@ function start() {
 }
 
 async function loadJSON() {
-  await Promise.all([fetch("https://ethereal-green-hyacinth.glitch.me").then((res) => res.json()), fetch("https://ethereal-green-hyacinth.glitch.me/beertypes").then((res) => res.json())]).then((foobarData) => {
+  await Promise.all([fetch("https://peat-peridot-swallow.glitch.me/").then((res) => res.json()), fetch("https://peat-peridot-swallow.glitch.me//beertypes").then((res) => res.json())]).then((foobarData) => {
     // When loaded, prepare data objects
     showOrders(foobarData[0].queue);
     showFav(foobarData[0].serving);
